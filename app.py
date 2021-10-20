@@ -89,7 +89,7 @@ def predict():
     return render_template('index.html', prediction_text="Predicted Salary is/are: {}".format(result))
 
 if __name__ == "__main__":
-    app.run(debug=False,port=9000)
+    app.run(debug=False)
 
 
 # In[ ]:
