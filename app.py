@@ -6,6 +6,7 @@
 
 from flask import Flask, make_response, request, render_template
 import io
+from io import StringIO
 import pandas as pd
 import numpy as np
 import pickle
@@ -89,11 +90,4 @@ def predict():
     return render_template('index.html', prediction_text="Predicted Salary is/are: {}".format(result))
 
 if __name__ == "__main__":
-    app.run(debug=False)
-
-
-# In[ ]:
-
-
-
-
+    app.run(debug=False,port=9000)
